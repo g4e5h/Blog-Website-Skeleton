@@ -1,0 +1,17 @@
+<%- include('partials/header') -%>
+
+   
+<div class="home-posts-container">
+
+    <% for(let i=0;i<blogs.length;i++)  { %>
+        
+        <div class="actual-post-container" >
+        <h1><%=blogs[i].title %> <span> <%=blogs[i].time%> </span> </h1>
+        <div id="content-container-home" style="overflow: auto;text-overflow: ellipsis;min-height:210px;height: 200px;"><pre><%=blogs[i].content %></pre></div>
+        <a href="/post/<%=blogs[i]._id%>" class="curved-button" alt="Button" > <span> Full Post </span></a>
+        </div>
+    
+      <% } %>
+    </div>
+
+<%- include('partials/footer') -%>

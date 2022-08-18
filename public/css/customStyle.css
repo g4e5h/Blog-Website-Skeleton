@@ -1,0 +1,148 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#new-post-container{
+margin: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#new-post-container textarea{
+
+padding: 8px;
+margin-bottom: 20px;
+width: 100%;
+
+}
+
+#new-post-container form[action="/"]{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+ 
+}
+#new-post-container input{
+    padding: 6px;
+    width: 100%;
+}
+#new-post-container input:focus, #new-post-container textarea:focus {box-shadow:0 0 5px lightblue;
+    outline:5px lightblue;
+    border: 1px solid lightblue;
+}
+
+#new-post-container button{
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    background-color: dodgerblue;
+    width: fit-content;
+    border:0px; 
+    border-radius: 4px;
+    color: white;
+}
+#new-post-container button:hover{
+    background-color: rgb(0, 100, 201);
+}
+
+#new-post-container button:active{
+    background-color: dodgerblue;
+}
+
+.home-posts-container{
+    min-height: 54vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.actual-post-container{
+    
+    position: relative;
+    box-sizing: border-box;
+    width: calc(80vw);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    min-height: 250px;
+
+    max-height:400px;
+    
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+
+    border: 2px solid rgba(128, 128, 128, 0.24);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.actual-post-container h1{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.24);
+    position: relative;
+     padding: 10px;
+    min-height: 40px;
+  
+    font-size: 3.2vw;
+}
+
+.actual-post-container h1 span{
+    position: absolute;
+   right: 5px;
+   color:rgba(126, 126, 126, 0.479) ;
+   font-size: 2.2vmin;
+}
+
+.actual-post-container pre {
+      box-sizing: border-box;
+      padding: 10px 20px 10px 15px;
+      font-size: 1.2rem;
+}
+
+.actual-post-container a{
+    position: relative;
+    right: 0px;
+}
+
+.actual-post-container .curved-button{
+    text-decoration: none;
+    position: absolute;
+    right: 1px;
+    bottom:1px;
+border-radius: 30px 0 20px 0;
+height: 7vmin;
+width: 8vmin;
+background-color: rgba(212, 212, 212, 0.582);
+transition: 1s ease;
+
+}
+.actual-post-container .curved-button:hover{
+width: 10vmin;
+height: 8vmin;
+background-color: rgba(212, 212, 212, 0.781);
+
+}
+.actual-post-container .curved-button span{
+font-size: 1.5vmin;
+position: absolute;
+bottom:35%;
+right: 18%;
+transform: rotate(322deg);
+transition: 1s;
+}
+
+.actual-post-container .curved-button:hover >span{
+    transition-delay: 0.2s;
+    font-size: 1.8vmin;
+}
+
+pre{
+    white-space: pre-wrap;
+}
+#content-container-home::-webkit-scrollbar{
+display: none;
+}
+
+

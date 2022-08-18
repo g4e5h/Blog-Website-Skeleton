@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<div class="home-posts-container">
+    
+   
+        <div class="actual-post-container" style="min-height: fit-content;max-height:fit-content;height:auto;">
+        <h1><%=blog.title %> <span> <%=blog.time%> </span> </h1>
+        <div id="content-container"><pre><%=blog.content %></pre></div>
+        </div>
+
+
+</div>
+
+
+<%- include('partials/footer') %>
